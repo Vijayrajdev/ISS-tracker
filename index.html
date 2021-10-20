@@ -9,10 +9,32 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="/assets/styles/style.css" />
 
-    <!-- Leaflet -->
+    <!-- Leaflet map -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   </head>
   <body>
-    <script src="app.js"></script>
+    <header>
+      <h1>ISS - TRACKER</h1>
+    </header>
+    <main>
+      <div class="map-container">
+        <div id="map"></div>
+      </div>
+      <div class="content-container">
+        <ul>
+          <p>Latitude &nbsp : &nbsp <span id="lat"></span>&nbsp deg</p>
+          <p>Longitude &nbsp : &nbsp <span id="lon"></span>&nbsp deg</p>
+          <p>Velocity &nbsp : &nbsp <span id="vel"></span>&nbsp Km/hr</p>
+        </ul>
+      </div>
+    </main>
+    <footer></footer>
+
+    <!-- External Javascript -->
+    <script src="/app.js"></script>
   </body>
 </html>
